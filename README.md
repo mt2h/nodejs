@@ -19,4 +19,7 @@ npm init
 ```bash
 npm install validator@10.8.0
 npm uninstall validator
+npm install chalk@2.4.1
+
+node app.js
 ```
