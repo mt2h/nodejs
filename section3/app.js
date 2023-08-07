@@ -19,3 +19,4 @@ console.log(validator.isURL('https://mead.io'))
 
 console.log(chalk.green('Success!'))
 console.log(chalk.green.bold('Success!'))
+console.log(chalk.green.inverse.bold('Success!'))
