@@ -22,4 +22,7 @@ npm uninstall validator
 npm install chalk@2.4.1
 
 node app.js
+
+sudo npm install nodemon@1.18.5 -g
+nodemon app.js
 ```

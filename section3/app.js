@@ -4,10 +4,8 @@ const validator = require('validator')
 
 fs.writeFileSync('notes.txt', 'This file was created with Node.js!')
 
-//const name = require('./utils.js')
-//console.log(name)
-
 const add = require('./utils.js')
+//console.log(name)
 console.log(add(5, 5))
 
 const getNotes = require('./notes.js')
@@ -20,3 +18,4 @@ console.log(validator.isURL('https://mead.io'))
 console.log(chalk.green('Success!'))
 console.log(chalk.green.bold('Success!'))
 console.log(chalk.green.inverse.bold('Success!'))
+console.log(chalk.red.bold('Error!'))
