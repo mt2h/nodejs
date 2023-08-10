@@ -26,3 +26,14 @@ node app.js
 sudo npm install nodemon@1.18.5 -g
 nodemon app.js
 ```
+
+## Arguments
+
+Use yargs
+
+```bash
+npm i yargs@12.0.2
+node app.js --help
+node app.js --version
+node app.js add --title="Shopping lit"
+```
