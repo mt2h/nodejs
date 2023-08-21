@@ -37,3 +37,29 @@ node app.js --help
 node app.js --version
 node app.js add --title="Shopping lit"
 ```
+
+## Debugging
+
+Add debugger in the code
+
+![Debugging](./img/2.png)
+
+Execute inspect
+
+![Debugging](./img/3.png)
+
+Open Chrome on chrome://inspect/
+
+![Debugging](./img/4.png)
+
+Press inspect
+
+![Debugging](./img/5.png)
+
+Press play buttom
+
+![Debugging](./img/5.png)
+
+Console
+
+![Debugging](./img/6.png)
