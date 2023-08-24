@@ -63,3 +63,37 @@ Press play buttom
 Console
 
 ![Debugging](./img/6.png)
+![Debugging](./img/7.png)
+
+## Call Stack: Callback Queue and Event Loop
+
+Example 1:
+
+![Call Stack](./img/8.png)
+![Call Stack](./img/9.png)
+![Call Stack](./img/10.png)
+
+Example 2:
+
+![Call Stack](./img/11.png)
+![Call Stack](./img/12.png)
+![Call Stack](./img/13.png)
+![Call Stack](./img/14.png)
+![Call Stack](./img/15.png)
+![Call Stack](./img/16.png)
+
+Example 3:
+
+![Call Stack](./img/17.png)
+![Call Stack](./img/18.png)
+![Call Stack](./img/19.png)
+![Call Stack](./img/20.png)
+![Call Stack](./img/21.png)
+![Call Stack](./img/22.png)
+![Call Stack](./img/23.png)
+![Call Stack](./img/24.png)
+![Call Stack](./img/25.png)
+![Call Stack](./img/26.png)
+![Call Stack](./img/27.png)
+![Call Stack](./img/28.png)
+![Call Stack](./img/29.png)
