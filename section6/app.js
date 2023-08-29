@@ -8,5 +8,32 @@ request({url: url, json: true}, (error, response) => {
     //console.log(data)
     //console.log(data.current)
     //console.log(response.body.current)
-    console.log(response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + ' dregress out.')
+    if(error){
+        console.log('Unable to connect to weather service!')
+        }
+    else if(response.body.error){
+        console.log('Unable to find location')
+        }
+    else{
+        console.log(response.body.current.weather_descriptions[0] + '. It is currently ' + response.body.current.temperature + ' dregress out.')
+        }
+    })
+
+const geocodeURL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoiYW5kcmV3bWVhZDEiLCJhIjoiY2pvOG8ybW90MDFhazNxcnJ4OTYydzJlOSJ9.njY7HvaalLEVhEOIghPTlw&limit=1'
+
+
+request({ url: geocodeURL, json: true }, (error, response) => {
+    if (error){
+        console.log('Unable to connect to location services!')
+        }
+    else if (!response.body.features){
+        console.log('Unable to find location. Try another search.')
+        }
+    else{
+        console.log('No geolocation data found in the response!')
+        console.log(response.body)
+        const latitude = response.body.features[0].center[0]
+        const longitude = response.body.features[0].center[1]
+        console.log(latitude, longitude)
+        }
     })
