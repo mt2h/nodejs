@@ -38,6 +38,13 @@ node app.js --version
 node app.js add --title="Shopping lit"
 ```
 
+## requests and web servers
+
+```bash
+npm i request@2.88.0
+npm i express@4.16.4
+```
+
 ## Debugging
 
 Add debugger in the code
