@@ -43,6 +43,7 @@ node app.js add --title="Shopping lit"
 ```bash
 npm i request@2.88.0
 npm i express@4.16.4
+npm i hbs@4.0.1
 ```
 
 ## Debugging
