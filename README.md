@@ -105,3 +105,9 @@ Example 3:
 ![Call Stack](./img/27.png)
 ![Call Stack](./img/28.png)
 ![Call Stack](./img/29.png)
+
+Run hds together node with nodemon
+
+```bash
+nodemon src/app.js -e js,hbs
+```
