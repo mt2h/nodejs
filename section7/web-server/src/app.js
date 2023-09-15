@@ -39,10 +39,28 @@ app.get('/help', (req, res) => {
         })
     })
 
+app.get('/help/*', (req, res) => {
+    //res.send('Help article not found')
+    res.render('404', {
+        title: '404',
+        name: 'Andrew Mead',
+        errorMessage: 'Help article not found.'
+        })
+    })
+
 app.get('/weather', (req, res) => {
     res.send({
         forecast: 'It is snowing',
         location: 'Philadelphia'
+        })
+    })
+
+app.get('*', (req, res) => {
+    //res.send('My 404 page')
+    res.render('404', {
+        title: '404',
+        name: 'Andrew Mead',
+        errorMessage: 'Page not found.'
         })
     })
 
