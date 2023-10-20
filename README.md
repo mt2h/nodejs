@@ -111,3 +111,29 @@ Run hds together node with nodemon
 ```bash
 nodemon src/app.js -e js,hbs
 ```
+
+Install Horoku
+
+```bash
+curl https://cli-assets.heroku.com/install.sh | sh
+heroku -v
+heroku login
+
+heroku keys:add #add public to to heroku
+cd web-server-node-js/
+
+heroku create mead-weather-application
+
+git push heroku main
+```
+
+Execute app node localy
+
+```bash
+chmod +x src/app.js
+npm run start
+
+npm run dev
+
+npm install nodemon@1.2.0 --save-dev
+```
