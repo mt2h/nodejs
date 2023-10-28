@@ -137,3 +137,10 @@ npm run dev
 
 npm install nodemon@1.2.0 --save-dev
 ```
+
+## MongoDB
+
+```bash
+npm init -y
+npm i mongodb@3.1.10
+```
