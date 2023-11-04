@@ -12,24 +12,23 @@ MongoClient.connect(connnetionURL, { useNewUrlParser: true }, (error, client) =>
         
     const db = client.db(databaseName)
 
-    db.collection('users').deleteMany({
-        age: 27
+    const updatePromise = db.collection('users').updateOne({
+        _id: new ObjectID("654562d0aa8abeef3c4202b0")
+        }, {
+        /*$set: {
+            name: 'Mike'
+            }*/
+        $inc: {
+            age: 1 //-1
+            }
         })
-        .then((result) => {
-            console.log(result.deletedCount)
-            })
-        .catch((error) => {
-            console.log(error)
-            })
 
-    db.collection('task').deleteOne({
-        _id: new ObjectID("6545676e50df4602fe82e8bb")
-        })
+    updatePromise
         .then((result) => {
             console.log(result)
-            })
+        })
         .catch((error) => {
             console.log(error)
-            })
+        })
 
     })
