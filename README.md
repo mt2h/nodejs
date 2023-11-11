@@ -143,4 +143,6 @@ npm install nodemon@1.2.0 --save-dev
 ```bash
 npm init -y
 npm i mongodb@3.1.10
+npm i mongoose@5.3.16
+npm i validator@10.9.0
 ```
